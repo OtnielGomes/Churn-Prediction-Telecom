@@ -620,8 +620,8 @@ class GraphicsData:
 
             ax[1].set_title(f'Absolute Frequecy (N)', fontsize = 16, fontweight = 'bold')
             ax[1].set_ylabel('Count') 
-            ax[1].grid(axis = 'y', linestyle = '--', alpha = 0.5)
-            ax[1].grid(axis = 'x', linestyle = '--', alpha = 0.5)
+            ax[1].grid(axis = 'y', linestyle = '--', alpha = 0.4)
+            ax[1].grid(axis = 'x', linestyle = '--', alpha = 0.4)
 
             # Annotate of values for blarplot
             for p in ax[1].patches:
