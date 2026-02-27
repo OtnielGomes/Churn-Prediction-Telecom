@@ -28,10 +28,10 @@ def optimize_dtypes(
     df_clean = df.copy()
 
     # Categorical Columns
-    categorical_cols = ['custcat', 'ed',]
+    categorical_cols = ['custcat',]
 
     # Interger Columns
-    integer_cols =  ['tenure', 'age', 'address', 'employ']
+    integer_cols =  ['tenure', 'age', 'address', 'employ', 'ed',]
 
     # Binary Columns
     binary_cols = [
@@ -50,7 +50,7 @@ def optimize_dtypes(
     df_clean[categorical_cols] = df_clean[categorical_cols].astype('category')
 
     # Interger Columns
-    df_clean[integer_cols] = df_clean[integer_cols].astype('Int64')
+    df_clean[integer_cols] = df_clean[integer_cols].astype('Int32')
 
     # Binary Columns
     df_clean[binary_cols] = df_clean[binary_cols].astype('int8')
